@@ -1,0 +1,12 @@
+.contenedor__titulo {
+  color: red;
+}
+
+.images {
+  flex-direction: column;
+}
+.images__items {
+  width: 25%;
+}
+
+/*# sourceMappingURL=estilo.css.map */
