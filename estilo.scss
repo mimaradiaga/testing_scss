@@ -1,0 +1,29 @@
+.contenedor {
+    &__titulo {
+        color: black;
+    }
+}
+
+.images {
+        &__items {
+            display: flex;
+            width: 10px;
+
+        }
+      
+
+        &__img { 
+            width: 20px;
+
+        }
+    }
+
+    .navigation {
+
+        &__list {
+            display: flex;
+        }
+    }
+
+
+
