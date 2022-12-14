@@ -1,5 +1,6 @@
-body {
-    background-color: antiquewhite;
+* {
+    margin: 0;
+
 }
 
 .contenedor {
@@ -8,20 +9,35 @@ body {
         color: #4300d2;
         display: flex;
         justify-content: center;
+        align-items: center;
+
+
     }
 }
 
+.navigation {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
 
 .images {
 
     display: flex;
     padding: 20px;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 
     &__items {
         display: flex;
         flex-direction: column;
-        width: 30%;
-        margin-right: 5%;
+        width: 20%;
+        margin-right: 5;
         border-radius: 10%;
 
         &__button {
@@ -43,7 +59,7 @@ body {
 
     margin-right: 10px;
     padding: 20px;
-    color:#353645;
+    color: #353645;
 
 
     &__list {
@@ -51,14 +67,48 @@ body {
         list-style: none;
         align-items: center;
         justify-content: center;
+        text-align: center;
 
         &__items {
             margin-right: 10%;
-            font-weight:bold;
+            font-weight: bold;
         }
 
 
     }
 
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+}
+
+.destinations__title {
+    text-align: center;
+    padding: 20px;
+}
+
+.gradient-text {
+    text-align: center;
+    background-color: red;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+header {
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
 
 }
