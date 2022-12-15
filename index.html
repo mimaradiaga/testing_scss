@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everybody can fly</title>
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./estilo.css">
 </head>
 
@@ -15,16 +18,22 @@
         <h1 class="gradient-text"> EVERYBODY CAN FLY </h1>
         <nav class="navigation">
             <ul class="navigation__list">
-                <li class="navigation__list__items">Inicio</li>
-                <li class="navigation__list__items">Nosotros</li>
-                <li class="navigation__list__items">Vuelos</li>
+                <a href="#destinos">
+                    <li class="navigation__list__items">Destinos</li>
+                </a>
+                <a href="#paquetes">
+                    <li class="navigation__list__items">Paquetes</li>
+                </a>
+                <a href="#contacto">
+                    <li class="navigation__list__items">Contacto</li>
+                </a>
             </ul>
         </nav>
     </header>
 
     <main class="container">
         <div class="destinations">
-            <h3 class="destinations__title">Destinos mas buscados</h3>
+            <h3 id="destinos" class="destinations__title">Destinos mas buscados</h3>
         </div>
         <section class="images">
             <div class="images__items">
@@ -40,8 +49,7 @@
             </div>
             <div class="images__items">
                 <h3 class="title">Honduras</h3>
-                <img class="images__items__img"
-                    src="https://static.dw.com/image/18817112_6.jpg">
+                <img class="images__items__img" src="https://static.dw.com/image/18817112_6.jpg">
 
             </div>
             <div class="images__items">
@@ -53,40 +61,108 @@
 
 
         </section>
-        <h3 class="destinations__title">Paquetes</h3>
+        <h3 id="paquetes" class="destinations__title">Paquetes</h3>
         <section class="images">
 
             <div class="images__items">
                 <h3 class="title">Cancún</h3>
-                <img class="images__items__img"
-                    src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/331000/331437-Quintana-Roo.jpg?impolicy=fcrop&w=360&h=224&q=medium"
-                    alt="cancun">
+                <details>
+                    <summary class="title__details"> <img class="images__items__img"
+                            src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/331000/331437-Quintana-Roo.jpg?impolicy=fcrop&w=360&h=224&q=medium"
+                            alt="cancun">Ver mas detalles</summary>
 
+                    <ul class="details__list">
+                        <li>Incluye: </li>
+                        <li>*6 días /5 noches de alojamiento en uno de nuestros Hotel/Resorts en Cancún por persona</li>
+                        <li>*ALL-INCLUSIVE: comidas y bebidas incluidas</li>
+                        <li>*Pases para los eventos especiales del hotel
+                        <li>
+
+                    </ul>
+
+                </details>
             </div>
+
             <div class="images__items">
                 <h3 class="title">Canal de Panama</h3>
-                <img class="images__items__img"
-                    src="https://decapolishotel.com/wp-content/uploads/2022/07/h1-que-tu-viaje-incluya-visita-canal-de-panama-blog-decapolis.jpg"
-                    alt="canal-panama">
+                <details>
+                    <summary class="title__details"><img class="images__items__img"
+                            src="https://decapolishotel.com/wp-content/uploads/2022/07/h1-que-tu-viaje-incluya-visita-canal-de-panama-blog-decapolis.jpg"
+                            alt="canal-panama">Ver mas detalles</summary>
+                    <ul class="details__list">
+                        <li>Incluye: </li>
+                        <li>*Maravíllate ante el Puente de las Américas que se extiende por la entrada del Pacífico al
+                            canal</li>
+                        <li>*Almuerzo</li>
+                        <li>*Guia</li>
+                        <li>*Bebidas sin alcohol.
+                        <li>
+                    </ul>
+                </details>
 
             </div>
             <div class="images__items">
                 <h3 class="title">Roatán</h3>
-                <img class="images__items__img"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxpl7UgMJ5sgbBzl7iiJxP4eigMp2eQwKkyA&usqp=CAU"
-                    alt="roatan">
+                <details>
+                    <summary class="title__details"><img class="images__items__img"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxpl7UgMJ5sgbBzl7iiJxP4eigMp2eQwKkyA&usqp=CAU"
+                            alt="roatan">Ver mas detalles</summary>
+                    <ul class="details__list">
+                        <li>Incluye: </li>
+                        <li>*Boletos de Ferry o Avión</li>
+                        <li>*Transporte a Aeropuerto o Muelle y hotel</li>
+                        <li>*Hospedaje 2 noches, 3 días
+                        <li>
+                        <li>*Desayuno tipo Buffet</li>
+                        <li>*Desayuno tipo Buffet</li>
+
+                    </ul>
+
+                </details>
 
             </div>
             <div class="images__items">
                 <h3 class="title">Miami</h3>
-                <img class="images__items__img"
-                    src="https://www.worldatlas.com/upload/df/29/12/shutterstock-490898872.jpg"
-                    alt="miami">
-            </div>
+                <details>
+                    <summary class="title__details"> <img class="images__items__img"
+                            src="https://www.worldatlas.com/upload/df/29/12/shutterstock-490898872.jpg" alt="miami">
+                        Ver mas detalles</summary>
+                    <ul class="details__list">
+                        <li>Incluye: </li>
+                        <li>*Boletos de Avión ida y vuelta</li>
+                        <li>*Transporte a Aeropuerto y hotel</li>
+                        <li>*Hospedaje 5 noches, 6 días<li>
+                        <li>*Comida tres tiempos incluida</li>
+                        <li>*Bebidas alcoholicas y no alcoholicas ilimitadas. </li>
 
+                    </ul>
+
+                </details>
+            </div>
             </div>
         </section>
     </main>
+    <div class="form">
+
+        <form class="form__elements">
+            <h2 id="contacto" class="">Contacto</h2>
+            <h2 class="form__elements__title">Nombre</h2>
+            <input type="text" class="form__elements__title__label" placeholder="Escriba aqui" required>
+
+            <h2 class="form__elements__title">Email</h2>
+            <input class="form__elements__title__label" type="email" placeholder="Ej.correo@mail.com" required>
+
+            <h2 class="form__elements__title">Numero de telefono</h2>
+            <input type="tel" class="form__elements__title__label" placeholder="Telefono" required>
+
+            <h2 class="form__elements__title">Asunto</h2>
+            <textarea class="form__elements__title__label" cols="20" rows="3" name="text" placeholder="Escriba aqui"
+                required></textarea>
+            <input class="button" type="submit" class="form__elements__title__label">
+        </form>
+    </div>
+
+    <footer class="footer">Todos los derechos reservados</footer>
 </body>
 
 </html>

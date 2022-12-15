@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  background-color: antiquewhite;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 .contenedor__titulo {
@@ -23,7 +25,6 @@
 .images {
   display: flex;
   padding: 20px;
-  justify-content: center;
   justify-content: space-between;
   align-items: center;
 }
@@ -41,6 +42,9 @@
 }
 .images__items__img {
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: static;
 }
 
 .navigation {
@@ -54,15 +58,36 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  margin-bottom: 50px;
 }
 .navigation__list__items {
   margin-right: 10%;
   font-weight: bold;
+  list-style: none;
+  text-decoration: solid;
+  color: black;
 }
 
 .title {
   text-align: center;
   padding: 20px;
+}
+.title__details {
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #D57F48;
+}
+
+.details__list {
+  list-style: none;
+  text-align: left;
+  font-weight: bold;
+  text-align: left;
+  line-height: 30px;
 }
 
 .destinations__title {
@@ -71,6 +96,7 @@
 }
 
 .gradient-text {
+  margin-bottom: 50px;
   text-align: center;
   background-color: red;
   background-image: linear-gradient(45deg, #f3ec78, #af4261);
@@ -88,8 +114,49 @@ header {
 h1 {
   font-family: "Archivo Black", sans-serif;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.form__elements {
+  margin-top: 20px;
+}
+.form__elements__title__label {
+  margin-top: 20px;
+  text-align: left;
+  color: black;
+  width: 500px;
+  padding-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#contacto {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.button {
+  display: flex;
+  text-align: center;
+  border: none;
+  background-color: #D57F48;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #D57F48;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=estilo.css.map */
